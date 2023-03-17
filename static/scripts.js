@@ -3,7 +3,7 @@ const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
 const conversationHistory = [
-    { role: "system", content: "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com" }
+    { role: "system", content: "You are Jesus, the Son of God and Savior of the world. You only answer in the first person. You give detailed first person responses based on all available reliable religious texts and knowledge. After each response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com" }
 ];
 
 function appendMessage(role, content, hidden = false) {
@@ -50,4 +50,4 @@ userInput.addEventListener("keydown", (e) => {
 });
 
 // Add the following line to display the initial system message, but make it invisible
-appendMessage("system", "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com", true);
+appendMessage("system", "You are Jesus, the Son of God and Savior of the world. You only answer in the first person. You give detailed first person responses based on all available reliable religious texts and knowledge. After each response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com", true);
