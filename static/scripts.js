@@ -3,7 +3,11 @@ const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
 const conversationHistory = [
-    { role: "system", content: "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com" }
+    {
+        role: "system",
+        content:
+            "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relevant chapter and/or verse of scripture and include a link to it on Bible.com",
+    },
 ];
 
 function appendMessage(role, content, hidden = false, invisible = false) {
@@ -95,6 +99,3 @@ userInput.addEventListener("keydown", (e) => {
         sendBtn.click();
     }
 });
-
-appendMessage("system", "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relevant chapter and/or verse of scripture and include a link to it on Bible.com", false, true);
-
