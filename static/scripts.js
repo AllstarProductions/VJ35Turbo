@@ -6,11 +6,14 @@ const conversationHistory = [
     { role: "system", content: "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com" }
 ];
 
-function appendMessage(role, content, hidden = false) {
+function appendMessage(role, content, hidden = false, invisible = false) {
     const message = document.createElement("div");
     message.classList.add("message", role);
     if (hidden) {
         message.classList.add("hidden");
+    }
+    if (invisible) {
+        message.classList.add("invisible");
     }
     const contentElement = document.createElement("div");
     contentElement.classList.add("content");
@@ -20,10 +23,6 @@ function appendMessage(role, content, hidden = false) {
     setTimeout(() => {
         chatbox.scrollTop = chatbox.scrollHeight;
     }, 0);
-
-    if (role === "system") {
-        message.classList.remove("hidden");
-    }
 }
 
 function showPulsingDots() {
@@ -97,5 +96,5 @@ userInput.addEventListener("keydown", (e) => {
     }
 });
 
-appendMessage("system", "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relvant chapter and/or verse of scripture and include a link to it on Bible.com", true);
+appendMessage("system", "Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked a question. And then after the response, please cite the relevant chapter and/or verse of scripture and include a link to it on Bible.com", false, true);
 
