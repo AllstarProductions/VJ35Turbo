@@ -149,3 +149,14 @@ body {
         opacity: 1;
     }
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .chat-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
