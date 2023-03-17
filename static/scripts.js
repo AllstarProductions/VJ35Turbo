@@ -20,6 +20,10 @@ function appendMessage(role, content, hidden = false) {
     setTimeout(() => {
         chatbox.scrollTop = chatbox.scrollHeight;
     }, 0);
+
+    if (role === "system") {
+        message.classList.remove("hidden");
+    }
 }
 
 function showPulsingDots() {
