@@ -56,11 +56,11 @@ body {
     padding: 8px 16px;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f2f2f2;
+    background-color: #0c5698;
 }
 
 #send-btn {
-    background-color: transparent;
+    background-color: #0c5698;
     color: #007bff;
     border: none;
     border-radius: 24px;
