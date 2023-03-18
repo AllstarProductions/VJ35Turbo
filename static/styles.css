@@ -95,6 +95,7 @@ body {
     margin-right: 8px;
     background: url("Cross.svg.png") no-repeat center center;
     background-size: contain;
+    flex-shrink: 0; /* Add this line */
 }
 
 .user {
