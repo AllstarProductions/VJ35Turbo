@@ -124,10 +124,12 @@ body {
     display: inline-block;
     width: 32px;
     height: 32px;
-    margin-left: 8px;
+    margin-right: 8px; /* Change margin-left to margin-right */
     background: url("UserIcon.png") no-repeat center center;
     background-size: contain;
+    flex-shrink: 0; /* Add this line to prevent icon from shrinking */
 }
+
 
 .content {
     white-space: pre-wrap;
