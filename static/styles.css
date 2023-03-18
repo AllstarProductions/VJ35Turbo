@@ -117,6 +117,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-direction: row-reverse; /* Add this line */
 }
 
 .user::before {
@@ -124,10 +125,11 @@ body {
     display: inline-block;
     width: 32px;
     height: 32px;
-    margin-left: 8px;
+    margin-right: 8px; /* Change to margin-left */
     background: url("UserIcon.png") no-repeat center center;
     background-size: contain;
 }
+
 
 .content {
     white-space: pre-wrap;
