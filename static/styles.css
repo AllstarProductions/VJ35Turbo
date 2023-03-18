@@ -60,20 +60,33 @@ body {
 }
 
 #send-btn {
-    background-color: transparent;
-    color: #007bff;
-    border: none;
-    border-radius: 24px;
-    padding: 8px 16px;
-    margin-left: 8px;
-    cursor: pointer;
-    outline: none;
-    font-size: 18px;
-    transition: color 0.2s;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  transition: all 0.2s;
 }
 
 #send-btn:hover {
-    color: #4d4dff;
+  background-color: #004c99;
+  color: #fff;
+}
+
+#send-btn:active {
+  background-color: #003366;
+  color: #fff;
+}
+
+#send-btn::before {
+  content: "\2192";
+  margin-right: 4px;
+}
+
 }
 
 .message {
