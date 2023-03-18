@@ -5,21 +5,23 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 16px;
     background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .chat-container {
     width: 100%;
     max-width: 600px;
-    max-height: 90vh;
+    max-height: calc(100% - 32px);
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow: hidden;
 }
+
 
 
 .header {
@@ -36,8 +38,10 @@ body {
     flex-grow: 1;
     padding: 16px;
     overflow-y: auto;
-    max-height: 70vh;
+    max-height: calc(100% - 124px);
+    min-height: calc(100% - 124px);
 }
+
 
 .input-container {
     display: flex;
@@ -150,17 +154,4 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 12px;
-    }
-    
-    .chat-container {
-        padding-left: 8px;
-        padding-right: 8px;
-        margin-left: auto;
-        margin-right: auto;
-        max-height: calc(100% - 32px);
-    }
-}
 
