@@ -93,7 +93,7 @@ body {
     width: 32px;
     height: 32px;
     margin-right: 8px;
-    background: url("Insert Url Here to add icon") no-repeat center center;
+    background: url("Cross.svg.png") no-repeat center center;
     background-size: contain;
 }
 
@@ -111,7 +111,7 @@ body {
     width: 32px;
     height: 32px;
     margin-left: 8px;
-    background: url("cross.png") no-repeat center center;
+    background: url("UserIcon.png") no-repeat center center;
     background-size: contain;
 }
 
